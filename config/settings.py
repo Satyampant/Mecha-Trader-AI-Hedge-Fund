@@ -11,6 +11,7 @@ class Config:
     
     # ==================== API Configuration ====================
     GROQ_API_KEY: str = os.getenv("GROQ_API_KEY", "")
+    FINANCIAL_DATASETS_API_KEY: str = os.getenv("FINANCIAL_DATASETS_API_KEY", "")
     
     # ==================== LLM Configuration ====================
     GROQ_MODEL: str = "llama-3.3-70b-versatile"
@@ -19,6 +20,7 @@ class Config:
     
     # ==================== Trading Configuration ====================
     SYMBOLS: List[str] = ["AAPL", "MSFT", "GOOGL"]
+    FREE_TICKERS = {"AAPL", "GOOGL", "MSFT", "NVDA", "TSLA"}
     INITIAL_CAPITAL: float = 100000.0
     
     # ==================== Backtest Configuration ====================
